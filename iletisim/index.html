@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/837be0c474.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="shortcut icon"
+        href="https://d3sxshmncs10te.cloudfront.net/icon/free/svg/1490629.svg?token=eyJhbGciOiJoczI1NiIsImtpZCI6ImRlZmF1bHQifQ__.eyJpc3MiOiJkM3N4c2htbmNzMTB0ZS5jbG91ZGZyb250Lm5ldCIsImV4cCI6MTY5Njg5NjAwMCwicSI6bnVsbCwiaWF0IjoxNjk2NzA0ODI3fQ__.3f37790a58a2035ebd4037d2f5105623e1bb0b3a87a1e9b6d285fd260aba5448"
+        type="image/x-icon">
+    <script src="script.js"></script>
+    <title>ELES Akademi - İletişim</title>
+</head>
+
+<body>
+    <header>
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+                <ul>
+                    <li><a href="/index.html">Anasayfa</a></li>
+                    <li><a href="/nereden-baslamaliyim/">Nereden Başlamalıym?</a></li>
+                    <li><a href="/diller/">Yazılım Dilleri</a></li>
+                    <li><a href="/yapayzeka/">Yapay Zeka</a></li>
+                    <li><a href="/pc-oneri/">Bilgisayar Önerisi</a></li>
+                    <li><a href="index.html">Bana ulaş</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-bg" id="menu-bg"></div>
+        <div class="logo text-light text-2xl px-4 py-1 rounded"><span
+                style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">Eles</span>
+            Yazılım</div>
+    </header>
+    <article>
+        <form class="container bg-gray-100 py-3 my-4 rounded" id="fs-frm" name="department-contact-form"
+            accept-charset="utf-8" action="https://formspree.io/f/mgejrzkl" method="post">
+            <h1 class="text-center text-5xl m-4">İletişim</h1>
+            <fieldset id="fs-frm-inputs">
+                <label for="full-name">İsminiz</label>
+                <input type="text" name="name" id="full-name" placeholder="İsim Soyisim" required="">
+                <label for="email-address">Email Adresiniz</label>
+                <input type="email" name="_replyto" id="email-address" placeholder="email@example.com" required="">
+                <label for="department">Seçiniz</label>
+                <select name="department" id="department" required="">
+                    <option value="" selected="" disabled="">Seçiniz</option>
+                    <option value="oneri">Öneri</option>
+                    <option value="Gorus">Görüş</option>
+                    <option value="Memnuniyet">Memnuniyet</option>
+                </select>
+                <label for="message">Mesaj</label>
+                <textarea rows="5" name="message" id="message" placeholder="Merhaba..." required=""></textarea>
+                <input type="hidden" name="_subject" id="email-subject" value="Department Contact Form Submission">
+            </fieldset>
+            <input type="submit" class="bg-red-500" value="Gönder">
+        </form>
+        <style>
+            /* reset */
+            #fs-frm input,
+            #fs-frm select,
+            #fs-frm textarea,
+            #fs-frm fieldset,
+            #fs-frm optgroup,
+            #fs-frm label,
+            #fs-frm #card-element:disabled {
+                font-family: inherit;
+                font-size: 100%;
+                color: inherit;
+                border: none;
+                border-radius: 0;
+                display: block;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+            }
+
+            #fs-frm label,
+            #fs-frm legend,
+            #fs-frm ::placeholder {
+                font-size: .825rem;
+                margin-bottom: .5rem;
+                padding-top: .2rem;
+                display: flex;
+                align-items: baseline;
+            }
+
+            /* border, padding, margin, width */
+            #fs-frm input,
+            #fs-frm select,
+            #fs-frm textarea,
+            #fs-frm #card-element {
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                background-color: rgba(255, 255, 255, 0.9);
+                padding: .75em 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            #fs-frm input:focus,
+            #fs-frm select:focus,
+            #fs-frm textarea:focus {
+                background-color: white;
+                outline-style: solid;
+                outline-width: thin;
+                outline-color: gray;
+                outline-offset: -1px;
+            }
+
+            #fs-frm [type="text"],
+            #fs-frm [type="email"] {
+                width: 100%;
+            }
+
+            #fs-frm [type="button"],
+            #fs-frm [type="submit"],
+            #fs-frm [type="reset"] {
+                width: auto;
+                cursor: pointer;
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+            }
+
+            #fs-frm [type="button"]:focus,
+            #fs-frm [type="submit"]:focus,
+            #fs-frm [type="reset"]:focus {
+                outline: none;
+            }
+
+            #fs-frm [type="submit"],
+            #fs-frm [type="reset"] {
+                margin-bottom: 0;
+            }
+
+            #fs-frm select {
+                text-transform: none;
+            }
+
+            #fs-frm [type="checkbox"] {
+                -webkit-appearance: checkbox;
+                -moz-appearance: checkbox;
+                appearance: checkbox;
+                display: inline-block;
+                width: auto;
+                margin: 0 .5em 0 0 !important;
+            }
+
+            #fs-frm [type="radio"] {
+                -webkit-appearance: radio;
+                -moz-appearance: radio;
+                appearance: radio;
+            }
+
+            /* address, locale */
+            #fs-frm fieldset.locale input[name="city"],
+            #fs-frm fieldset.locale select[name="state"],
+            #fs-frm fieldset.locale input[name="postal-code"] {
+                display: inline;
+            }
+
+            #fs-frm fieldset.locale input[name="city"] {
+                width: 52%;
+            }
+
+            #fs-frm fieldset.locale select[name="state"],
+            #fs-frm fieldset.locale input[name="postal-code"] {
+                width: 20%;
+            }
+
+            #fs-frm fieldset.locale input[name="city"],
+            #fs-frm fieldset.locale select[name="state"] {
+                margin-right: 3%;
+            }
+        </style>
+    </article>
+
+
+</body>
+
+</html>
